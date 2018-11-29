@@ -7,6 +7,7 @@ import curses
 from random import randint
 
 class SnakeGame:
+    stdscr = curses.initscr()
     def __init__(self, board_width = 20, board_height = 20, gui = False):
         self.score = 0
         self.done = False
